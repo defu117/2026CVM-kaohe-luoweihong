@@ -5,6 +5,7 @@ ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app
 ENV DATA_DIR=/data
 ENV FLAMEGRAPH_DIR=/opt/FlameGraph
+ENV TZ=Asia/Shanghai
 ENV WINDOW_SECONDS=60
 ENV RETENTION_HOURS=24
 ENV SAMPLE_FREQ=99
@@ -22,6 +23,7 @@ RUN set -eux; \
       procps \
       python3 \
       python3-flask \
+      tzdata \
       stress-ng; \
     (apt-get install -y --no-install-recommends linux-tools-common linux-tools-generic || \
      apt-get install -y --no-install-recommends linux-perf || true); \
@@ -39,4 +41,3 @@ EXPOSE 8080
 VOLUME ["/data"]
 
 ENTRYPOINT ["/entrypoint.sh"]
-

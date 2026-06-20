@@ -40,6 +40,8 @@ Run the profiler:
 docker run --privileged --pid=host -d \
   -p 8080:8080 \
   -v "$(pwd)/data:/data" \
+  -v /etc/localtime:/etc/localtime:ro \
+  -e TZ=Asia/Shanghai \
   -e WINDOW_SECONDS=60 \
   -e RETENTION_HOURS=24 \
   --name cpu-profiler \
@@ -58,6 +60,8 @@ For a quick test, use shorter windows:
 docker run --privileged --pid=host -d \
   -p 8080:8080 \
   -v "$(pwd)/data:/data" \
+  -v /etc/localtime:/etc/localtime:ro \
+  -e TZ=Asia/Shanghai \
   -e WINDOW_SECONDS=10 \
   -e RETENTION_HOURS=1 \
   --name cpu-profiler \
@@ -79,6 +83,8 @@ docker load -i profiler.tar
 docker run --privileged --pid=host -d \
   -p 8080:8080 \
   -v "$(pwd)/data:/data" \
+  -v /etc/localtime:/etc/localtime:ro \
+  -e TZ=Asia/Shanghai \
   --name cpu-profiler \
   cpu-profiler
 ```
@@ -163,6 +169,7 @@ bash task2/test/test_scenario.sh
 | `PERF_SCOPE` | `system` | `system` adds `-a`; `process` profiles only the sleep command |
 | `DATA_DIR` | `/data` | Root directory for samples, index, and flame graphs |
 | `FLAMEGRAPH_DIR` | `/opt/FlameGraph` | Directory containing FlameGraph scripts |
+| `TZ` | `Asia/Shanghai` | Time zone used by sample windows and Web UI |
 | `START_COLLECTOR` | `1` | Set to `0` to run the Web server without background collection |
 
 ## Design Tradeoffs
