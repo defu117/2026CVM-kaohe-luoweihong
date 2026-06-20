@@ -1,0 +1,26 @@
+{
+  "start": "2026-06-20 21:35:49",
+  "end": "2026-06-20 21:37:31",
+  "svg": "/data/flamegraphs/flame_20260620_213549_20260620_213731.svg",
+  "url": "/flamegraphs/flame_20260620_213549_20260620_213731.svg",
+  "samples": [
+    {
+      "start": "2026-06-20 21:35:38",
+      "end": "2026-06-20 21:36:44",
+      "file": "/data/samples/20260620_213538_60s.perf.data",
+      "status": "ok",
+      "size_bytes": 12678237,
+      "error": ""
+    },
+    {
+      "start": "2026-06-20 21:36:44",
+      "end": "2026-06-20 21:37:50",
+      "file": "/data/samples/20260620_213644_60s.perf.data",
+      "status": "ok",
+      "size_bytes": 12705957,
+      "error": ""
+    }
+  ],
+  "sample_count": 2,
+  "renderer": "official FlameGraph"
+}
