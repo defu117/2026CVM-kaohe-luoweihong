@@ -1,0 +1,15 @@
+# started on Tue Jun 16 21:43:36 2026
+
+
+ Performance counter stats for './task1/3-cache-line-test/cache_line_test 64':
+
+          43766544      L1-dcache-load-misses                                                 
+           2637649      cache-misses                                                          
+           1037190      dTLB-load-misses                                                      
+
+       0.241654455 seconds time elapsed
+
+       0.087837000 seconds user
+       0.175675000 seconds sys
+
+

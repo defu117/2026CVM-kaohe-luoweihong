@@ -1,0 +1,24 @@
+# started on Tue Jun 16 21:18:06 2026
+
+
+ Performance counter stats for 'stress-ng --cpu 1 --cpu-method int64 -t 30s':
+
+      155597126807      cycles                                                                  (66.67%)
+      474663983850      instructions                     #    3.05  insn per cycle              (66.67%)
+          36045102      cache-references                                                        (66.67%)
+          10201817      cache-misses                     #   28.30% of all cache refs           (66.67%)
+           5792307      L1-dcache-load-misses                                                   (66.65%)
+            752143      L1-icache-load-misses                                                   (66.66%)
+   <not supported>      LLC-load-misses                                                       
+        5659124646      branch-instructions                                                     (66.66%)
+          13059572      branch-misses                    #    0.23% of all branches             (66.68%)
+            348013      dTLB-load-misses                                                        (66.68%)
+                85      context-switches                                                      
+                 2      cpu-migrations                                                        
+
+      30.037767034 seconds time elapsed
+
+      32.729096000 seconds user
+       0.029043000 seconds sys
+
+

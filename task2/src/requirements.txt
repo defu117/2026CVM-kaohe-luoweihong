@@ -1,0 +1,4 @@
+# Flask is installed through apt in the Dockerfile to keep the image simple.
+# This file is kept for local development environments that prefer pip.
+Flask>=3.0,<4.0
+

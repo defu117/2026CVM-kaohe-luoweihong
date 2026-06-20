@@ -1,0 +1,9 @@
+data
+profiler.tar
+test/screenshots
+__pycache__
+*.pyc
+*.pyo
+*.perf
+*.perf.data
+

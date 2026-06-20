@@ -1,0 +1,24 @@
+# started on Tue Jun 16 21:22:26 2026
+
+
+ Performance counter stats for 'stress-ng --vm 1 --vm-bytes 1G --vm-method read64 --vm-keep -t 30s':
+
+      157362800527      cycles                                                                  (66.68%)
+      382126173800      instructions                     #    2.43  insn per cycle              (66.68%)
+       42794921095      cache-references                                                        (66.66%)
+          18044086      cache-misses                     #    0.04% of all cache refs           (66.66%)
+          26563134      L1-dcache-load-misses                                                   (66.67%)
+            719594      L1-icache-load-misses                                                   (66.67%)
+   <not supported>      LLC-load-misses                                                       
+       27387956224      branch-instructions                                                     (66.68%)
+          18372728      branch-misses                    #    0.07% of all branches             (66.68%)
+         568908936      dTLB-load-misses                                                        (66.68%)
+                80      context-switches                                                      
+                 2      cpu-migrations                                                        
+
+      30.034250219 seconds time elapsed
+
+      32.628793000 seconds user
+       0.131695000 seconds sys
+
+
