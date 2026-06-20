@@ -76,6 +76,10 @@ docker run --privileged --pid=host -d \
 docker save cpu-profiler -o profiler.tar
 ```
 
+由于 `profiler.tar` 约 158MB，超过 GitHub 普通文件 100MB 限制，已上传到 GitHub Release 附件：
+
+[下载 profiler.tar](https://github.com/defu117/2026CVM-kaohe-luoweihong/releases/download/task2-profiler-v1/profiler.tar)
+
 评审方可以通过以下方式加载并启动：
 
 ```bash
@@ -212,4 +216,3 @@ task2/test/screenshots/
 - 默认使用 `cpu-clock` 事件，比硬件 PMU 事件更适合 WSL / Docker Desktop 等虚拟化环境。
 - 默认使用系统级采样，适合模拟线上服务故障复盘场景。
 - 内置简化 SVG 渲染器只是兜底方案，正常情况下优先使用官方 FlameGraph 输出。
-

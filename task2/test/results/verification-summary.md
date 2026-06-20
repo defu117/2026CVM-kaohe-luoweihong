@@ -75,7 +75,9 @@ task2/test/results/cpu-spike-flamegraph.svg
 docker save cpu-profiler -o task2/profiler.tar
 ```
 
-导出的 `profiler.tar` 约为 158 MB，超过 GitHub 普通文件 100 MB 限制。因此该文件保留在本地，并已通过 `.gitignore` 忽略。如果评审需要预构建镜像 tar 包，应将其上传到 GitHub Release 附件中。
+导出的 `profiler.tar` 约为 158 MB，超过 GitHub 普通文件 100 MB 限制。因此该文件保留在本地，并已通过 `.gitignore` 忽略。预构建镜像 tar 包已上传到 GitHub Release：
+
+[下载 profiler.tar](https://github.com/defu117/2026CVM-kaohe-luoweihong/releases/download/task2-profiler-v1/profiler.tar)
 
 ## 截图证据
 
