@@ -6,5 +6,6 @@ __pycache__/
 *.perf
 task2/data/
 task2/profiler.tar
+task1/3-cache-line-test/cache_line_test
 __pycache__/
 *.pyc
