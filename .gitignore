@@ -9,3 +9,4 @@ task2/profiler.tar
 task1/3-cache-line-test/cache_line_test
 __pycache__/
 *.pyc
+fill_repo_content.sh
