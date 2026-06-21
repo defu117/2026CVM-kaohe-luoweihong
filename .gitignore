@@ -10,3 +10,4 @@ task1/3-cache-line-test/cache_line_test
 __pycache__/
 *.pyc
 fill_repo_content.sh
+CVM竞品微架构深度分析考题.md
