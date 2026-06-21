@@ -51,8 +51,6 @@
 
 ## 备注
 
-`resume/resume.pdf` 需要提交前手动放入个人简历 PDF。
-
 `task2/profiler.tar` 已在本地通过 `docker save` 导出，但大小约 158MB，超过 GitHub 普通文件 100MB 限制，因此不直接提交到 Git 仓库。预构建镜像 tar 包已上传到 GitHub Release：
 
 [下载 profiler.tar](https://github.com/defu117/2026CVM-kaohe-luoweihong/releases/download/task2-profiler-v1/profiler.tar)
